@@ -1,0 +1,151 @@
+/* ==========================================================
+   TAZA BAZAR — Responsive Stylesheet
+   Breakpoints: 320 / 375 / 425 (mobile) · 768 / 992 (tablet)
+   1200 (laptop) · 1440 (desktop) · 1920+ (4K / Smart TV)
+   ========================================================== */
+
+/* ==========================
+   4K / Smart TV — 1920px and up
+========================== */
+@media (min-width: 1920px) {
+  :root { --container-max: 1600px; }
+  html { font-size: 112%; }
+  .hero-slider { min-height: 680px; }
+}
+
+/* ==========================
+   Desktop — up to 1440px (default already covers this)
+========================== */
+@media (max-width: 1440px) {
+  :root { --container-max: 1180px; }
+}
+
+/* ==========================
+   Laptop — 1200px
+========================== */
+@media (max-width: 1200px) {
+  .container { padding: 0 var(--space-4); }
+  .footer-top { grid-template-columns: 1.2fr repeat(3, 1fr); }
+}
+
+/* ==========================
+   Tablet — 992px
+========================== */
+@media (max-width: 992px) {
+  .header-top-left span:nth-child(3) { display: none; }
+  .main-nav { display: none; }
+  .hamburger { display: flex; }
+  .header-search { display: none; }
+
+  .hero-slide { grid-template-columns: 1fr; text-align: center; }
+  .hero-copy { order: 2; }
+  .hero-media { order: 1; }
+  .hero-copy p { margin-left: auto; margin-right: auto; }
+  .hero-cta { justify-content: center; }
+  .hero-stats { justify-content: center; }
+
+  .restaurant-card { grid-template-columns: 1fr; }
+  .restaurant-media { aspect-ratio: 16/9; }
+
+  .auth-wrap { grid-template-columns: 1fr; }
+  .auth-media { display: none; }
+
+  .cart-layout { grid-template-columns: 1fr; }
+  .cart-summary { position: static; }
+
+  .pd-layout { grid-template-columns: 1fr; }
+  .about-grid { grid-template-columns: 1fr; }
+
+  .week-ticker { grid-template-columns: repeat(4, 1fr); }
+  .week-ticker .day:nth-child(n+5) { display: none; }
+  .week-ticker.show-all { grid-template-columns: repeat(4, 1fr); }
+  .week-ticker.show-all .day { display: block; }
+
+  .footer-top { grid-template-columns: 1fr 1fr; }
+}
+
+/* ==========================
+   Tablet (portrait) — 768px
+========================== */
+@media (max-width: 768px) {
+  section { padding: var(--space-6) 0; }
+
+  .header-top-left { gap: var(--space-2); }
+  .header-top-left span:nth-child(2) { display: none; }
+
+  .section-head { flex-direction: column; align-items: flex-start; }
+
+  .categories-grid { grid-template-columns: repeat(2, 1fr); }
+  .products-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .stat-strip { grid-template-columns: repeat(2, 1fr); }
+
+  .cta-band { flex-direction: column; text-align: center; }
+
+  .footer-top { grid-template-columns: 1fr; gap: var(--space-5); padding-top: var(--space-6); }
+  .footer-bottom { flex-direction: column; text-align: center; }
+
+  .form-row { grid-template-columns: 1fr; }
+
+  .week-ticker { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ==========================
+   Mobile — 425px
+========================== */
+@media (max-width: 425px) {
+  .container { padding: 0 var(--space-3); }
+
+  .header-top { font-size: 0.72rem; }
+  .header-top-left span:nth-child(2),
+  .header-top-left span:nth-child(3) { display: none; }
+
+  .logo img { height: 34px; }
+  .header-actions .btn-icon:not(.cart-icon):not(.menu-toggle) { display: none; }
+
+  .hero-slider { min-height: 460px; }
+  .hero-copy h1 { font-size: 1.8rem; }
+  .hero-cta { flex-direction: column; align-items: stretch; }
+  .hero-cta .btn { width: 100%; }
+  .hero-stats { gap: var(--space-3); flex-wrap: wrap; justify-content: space-between; }
+
+  .chalk-board-frame { padding: var(--space-3); }
+  .week-ticker { grid-template-columns: repeat(3, 1fr); gap: var(--space-1); }
+  .chalk-title { font-size: 1.25rem; }
+
+  .categories-grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-2); }
+  .products-grid { grid-template-columns: 1fr; }
+
+  .product-actions { flex-direction: column; }
+
+  .restaurant-body { padding: var(--space-4); }
+  .restaurant-meta { gap: var(--space-3); }
+
+  .cart-table thead { display: none; }
+  .cart-table, .cart-table tbody, .cart-table tr, .cart-table td { display: block; width: 100%; }
+  .cart-table tr { border-bottom: 8px solid var(--color-ivory-100); padding: var(--space-2) 0; }
+  .cart-table td { border-top: none; padding: var(--space-1) var(--space-3); }
+  .cart-table td::before { content: attr(data-label); display: block; font-family: var(--font-mono); font-size: 0.68rem; text-transform: uppercase; color: var(--color-ink-400); margin-bottom: 0.2rem; }
+
+  .pd-thumbs { flex-wrap: wrap; }
+  .auth-form-col { padding: var(--space-5) var(--space-3); }
+
+  .stat-strip { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ==========================
+   Small mobile — 375px
+========================== */
+@media (max-width: 375px) {
+  .hero-copy h1 { font-size: 1.6rem; }
+  .header-top { display: none; }
+}
+
+/* ==========================
+   Extra small — 320px
+========================== */
+@media (max-width: 320px) {
+  .categories-grid { grid-template-columns: 1fr 1fr; }
+  .week-ticker { grid-template-columns: repeat(2, 1fr); }
+  .btn { padding: 0.7rem 1.2rem; font-size: 0.85rem; }
+}

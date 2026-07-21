@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us — Taza Bazar</title>
+<meta name="description" content="Learn how Taza Bazar sources fresh meat, fish and produce daily and delivers it across Dhaka.">
+<meta name="theme-color" content="#16342A">
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/dark-mode.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<div class="loader-overlay"><div class="loader-spinner" role="status" aria-label="Loading"></div></div>
+
+<!-- ==========================
+     Header Section
+========================== -->
+<header class="site-header">
+  <div class="header-top">
+    <div class="container">
+      <div class="header-top-left">
+        <span>📍 Delivering across Dhaka & nearby areas</span>
+        <span>🕒 Open daily · 8:00 AM – 11:00 PM</span>
+        <span>☎ +880 1700-000000</span>
+      </div>
+      <div class="header-top-right">
+        <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" aria-label="Toggle dark mode">
+          <span class="icon-moon" aria-hidden="true">🌙</span><span class="icon-sun" aria-hidden="true">☀️</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-main container">
+    <a href="index.html" class="logo" aria-label="Taza Bazar home">
+      <img src="images/logo.svg" alt="Taza Bazar logo" width="200" height="60">
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="category.html">Category</a></li>
+        <li><a href="signin.html">Sign In</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+
+    <form class="header-search" data-search-form role="search">
+      <label for="header-search-input" class="visually-hidden">Search products</label>
+      <input type="search" id="header-search-input" placeholder="Search fish, meat, veg…" autocomplete="off">
+      <button type="submit" aria-label="Search">🔍</button>
+    </form>
+
+    <div class="header-actions">
+      <a class="btn-icon" href="favorite.html" aria-label="View favorites">
+        <span aria-hidden="true">🤍</span><span class="badge-count" data-fav-count>0</span>
+      </a>
+      <a class="btn-icon cart-icon" href="cart.html" aria-label="View cart">
+        <span aria-hidden="true">🛒</span><span class="badge-count" data-cart-count>0</span>
+      </a>
+      <button type="button" class="btn-icon" aria-label="Choose delivery location">📍</button>
+      <button type="button" class="hamburger menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-nav" aria-label="Mobile">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="category.html">Category</a></li>
+      <li><a href="signin.html">Sign In</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <!-- ==========================
+       Page Hero
+  ========================== -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Home</a> / About</p>
+      <h1>From the market stall to your kitchen</h1>
+      <p style="color:rgba(247,241,225,0.8);max-width:60ch;">Taza Bazar started as a single butcher's counter in Gulshan and grew into a daily-price online market trusted across Dhaka.</p>
+    </div>
+  </section>
+
+  <section aria-label="Our story">
+    <div class="container about-grid">
+      <div class="about-hero-media reveal">
+        <img src="images/about-hero.svg" alt="Fresh produce being packed for delivery" width="1600" height="520">
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Our Story</span>
+        <h2>Honest prices, sourced fresh every morning</h2>
+        <p>We built Taza Bazar because online grocery prices rarely reflected what was actually happening in the market that day. Our weekly price system mirrors the real bazar — when supply is good, prices drop; when it's tight, we say so upfront instead of hiding it in delivery fees.</p>
+        <p>Every item is sourced the same morning it's listed, from farms and fisheries we've worked with for years.</p>
+        <a href="category.html" class="btn btn-primary">Browse Today's Market</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="stat-strip">
+        <div class="reveal"><strong>25k+</strong><span>Orders delivered</span></div>
+        <div class="reveal"><strong>9</strong><span>Categories sourced daily</span></div>
+        <div class="reveal"><strong>45 min</strong><span>Average delivery time</span></div>
+        <div class="reveal"><strong>4.8★</strong><span>Customer rating</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-label="How we work">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">How It Works</span>
+          <h2>From sourcing to your door</h2>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal"><strong>5:00 AM</strong><p>Our buyers select the day's meat, fish and produce directly from trusted farms and wholesale markets.</p></div>
+        <div class="timeline-item reveal"><strong>7:00 AM</strong><p>Today's prices are set and published on the market board — the same board you see on our homepage.</p></div>
+        <div class="timeline-item reveal"><strong>8:00 AM</strong><p>The outlet opens for online orders and same-day delivery begins.</p></div>
+        <div class="timeline-item reveal"><strong>45–60 min</strong><p>Your order is packed, quality-checked and delivered to your door.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-label="Our outlets" id="outlets">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Visit Us</span>
+          <h2>Our sourcing outlet</h2>
+        </div>
+      </div>
+      <div class="restaurant-card reveal">
+        <div class="restaurant-media">
+          <span class="status-pill open">Open Now</span>
+          <img src="images/restaurant-1.svg" alt="Taza Bazar Gulshan outlet storefront" width="1600" height="500">
+        </div>
+        <div class="restaurant-body">
+          <h3>Taza Bazar — Gulshan Outlet</h3>
+          <p style="color:var(--color-ink-400);">House 12, Road 103, Gulshan 2, Dhaka 1212</p>
+          <div class="restaurant-meta">
+            <div class="meta-item"><div><strong>45 minutes</strong><span>Delivery time</span></div></div>
+            <div class="meta-item"><div><strong>5 km radius</strong><span>Delivery area</span></div></div>
+            <div class="meta-item"><div><strong>৳60 flat</strong><span>Delivery charge</span></div></div>
+          </div>
+          <div class="restaurant-cta">
+            <a class="btn btn-primary" href="https://www.google.com/maps" target="_blank" rel="noopener">Open in Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-label="Our team" id="team">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">The People</span>
+          <h2>The team behind the counter</h2>
+        </div>
+      </div>
+      <div class="team-grid">
+        <div class="team-card reveal"><div class="team-avatar">🧑‍🌾</div><h3>Rafiq Hasan</h3><p style="color:var(--color-ink-400);font-size:0.88rem;">Sourcing Lead</p></div>
+        <div class="team-card reveal"><div class="team-avatar">🧑‍🍳</div><h3>Nabila Chowdhury</h3><p style="color:var(--color-ink-400);font-size:0.88rem;">Quality Control</p></div>
+        <div class="team-card reveal"><div class="team-avatar">🚴</div><h3>Tanvir Ahmed</h3><p style="color:var(--color-ink-400);font-size:0.88rem;">Delivery Operations</p></div>
+        <div class="team-card reveal"><div class="team-avatar">🧑‍💻</div><h3>Sadia Islam</h3><p style="color:var(--color-ink-400);font-size:0.88rem;">Customer Support</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-label="Join Taza Bazar">
+    <div class="container">
+      <div class="cta-band reveal">
+        <div><h2>Taste the difference of same-day sourcing</h2><p>Create a free account and start ordering in minutes.</p></div>
+        <a class="btn btn-gold" href="signup.html">Create Free Account</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==========================
+     Footer
+========================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><img src="images/logo-light.svg" alt="Taza Bazar logo" width="200" height="60"></a>
+        <p>Fresh meat, fish, vegetables and fruits delivered from the market to your kitchen — at honest daily prices.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="WhatsApp">💬</a>
+          <a href="#" aria-label="YouTube">▶️</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="about.html#outlets">Outlets</a></li>
+          <li><a href="about.html#team">Our Team</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="category.html?cat=Goat%20Meat">Goat Meat</a></li>
+          <li><a href="category.html?cat=Chicken">Chicken</a></li>
+          <li><a href="category.html?cat=Fish">Fish</a></li>
+          <li><a href="category.html?cat=Vegetables">Vegetables</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Support</h4>
+        <ul>
+          <li><a href="cart.html">Track Order</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+        <address>
+          House 12, Road 103, Gulshan 2, Dhaka<br>
+          ☎ +880 1700-000000<br>
+          ✉ hello@tazabazar.example
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-current-year></span> Taza Bazar. All rights reserved.</span>
+      <span><a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="javascript/script.js"></script>
+<script src="javascript/cart.js"></script>
+<script src="javascript/search.js"></script>
+<script src="javascript/favorite.js"></script>
+<script src="javascript/darkmode.js"></script>
+</body>
+</html>

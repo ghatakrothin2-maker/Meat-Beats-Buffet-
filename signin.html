@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign In — Taza Bazar</title>
+<meta name="description" content="Sign in to your Taza Bazar account to track orders and reorder favourites.">
+<meta name="theme-color" content="#16342A">
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/dark-mode.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<div class="loader-overlay"><div class="loader-spinner" role="status" aria-label="Loading"></div></div>
+
+<!-- ==========================
+     Header Section
+========================== -->
+<header class="site-header">
+  <div class="header-top">
+    <div class="container">
+      <div class="header-top-left">
+        <span>📍 Delivering across Dhaka & nearby areas</span>
+        <span>🕒 Open daily · 8:00 AM – 11:00 PM</span>
+        <span>☎ +880 1700-000000</span>
+      </div>
+      <div class="header-top-right">
+        <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" aria-label="Toggle dark mode">
+          <span class="icon-moon" aria-hidden="true">🌙</span><span class="icon-sun" aria-hidden="true">☀️</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-main container">
+    <a href="index.html" class="logo" aria-label="Taza Bazar home">
+      <img src="images/logo.svg" alt="Taza Bazar logo" width="200" height="60">
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="category.html">Category</a></li>
+        <li><a href="signin.html" aria-current="page">Sign In</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+
+    <form class="header-search" data-search-form role="search">
+      <label for="header-search-input" class="visually-hidden">Search products</label>
+      <input type="search" id="header-search-input" placeholder="Search fish, meat, veg…" autocomplete="off">
+      <button type="submit" aria-label="Search">🔍</button>
+    </form>
+
+    <div class="header-actions">
+      <a class="btn-icon" href="favorite.html" aria-label="View favorites">
+        <span aria-hidden="true">🤍</span><span class="badge-count" data-fav-count>0</span>
+      </a>
+      <a class="btn-icon cart-icon" href="cart.html" aria-label="View cart">
+        <span aria-hidden="true">🛒</span><span class="badge-count" data-cart-count>0</span>
+      </a>
+      <button type="button" class="btn-icon" aria-label="Choose delivery location">📍</button>
+      <button type="button" class="hamburger menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-nav" aria-label="Mobile">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="category.html">Category</a></li>
+      <li><a href="signin.html">Sign In</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <section aria-label="Sign in">
+    <div class="auth-wrap">
+      <div class="auth-media">
+        <img src="images/auth-side.svg" alt="Fresh produce at Taza Bazar" width="600" height="800">
+        <div class="auth-media-caption">
+          <h2>Welcome back to the bazar</h2>
+          <p>Sign in to reorder your favourites and track today's prices.</p>
+        </div>
+      </div>
+      <div class="auth-form-col">
+        <form class="auth-form" id="signinForm" novalidate>
+          <h1>Sign in</h1>
+          <p>New here? <a href="signup.html" style="color:var(--color-brick-600);font-weight:700;">Create an account</a> instead.</p>
+
+          <div class="form-group">
+            <label for="signinEmail">Email address</label>
+            <input type="email" id="signinEmail" name="email" required autocomplete="email" placeholder="you@example.com">
+            <span class="field-error">Please enter a valid email address.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="signinPassword">Password</label>
+            <input type="password" id="signinPassword" name="password" required minlength="6" autocomplete="current-password" placeholder="••••••••">
+            <span class="field-error">Password must be at least 6 characters.</span>
+          </div>
+
+          <div class="form-between">
+            <label class="form-check"><input type="checkbox" name="remember"> Remember me</label>
+            <a href="#">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+
+          <div class="auth-divider">or continue with</div>
+          <div class="social-auth">
+            <button type="button">🟢 Google</button>
+            <button type="button">📘 Facebook</button>
+          </div>
+
+          <p class="auth-switch">Don't have an account? <a href="signup.html">Sign up for free</a></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==========================
+     Footer
+========================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><img src="images/logo-light.svg" alt="Taza Bazar logo" width="200" height="60"></a>
+        <p>Fresh meat, fish, vegetables and fruits delivered from the market to your kitchen — at honest daily prices.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="WhatsApp">💬</a>
+          <a href="#" aria-label="YouTube">▶️</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="about.html#outlets">Outlets</a></li>
+          <li><a href="about.html#team">Our Team</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="category.html?cat=Goat%20Meat">Goat Meat</a></li>
+          <li><a href="category.html?cat=Chicken">Chicken</a></li>
+          <li><a href="category.html?cat=Fish">Fish</a></li>
+          <li><a href="category.html?cat=Vegetables">Vegetables</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Support</h4>
+        <ul>
+          <li><a href="cart.html">Track Order</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+        <address>
+          House 12, Road 103, Gulshan 2, Dhaka<br>
+          ☎ +880 1700-000000<br>
+          ✉ hello@tazabazar.example
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-current-year></span> Taza Bazar. All rights reserved.</span>
+      <span><a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="javascript/script.js"></script>
+<script src="javascript/cart.js"></script>
+<script src="javascript/search.js"></script>
+<script src="javascript/favorite.js"></script>
+<script src="javascript/darkmode.js"></script>
+<script>
+document.getElementById("signinForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  let valid = true;
+  this.querySelectorAll("[required]").forEach((input) => {
+    const group = input.closest(".form-group");
+    const ok = input.checkValidity();
+    group.classList.toggle("has-error", !ok);
+    if (!ok) valid = false;
+  });
+  if (valid) window.tazaShowToast("Signed in successfully — welcome back!");
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* ==========================================================
+   TAZA BAZAR — Dark Mode Stylesheet
+   Applied when <body data-theme="dark"> is set by darkmode.js
+   ========================================================== */
+
+body[data-theme="dark"] {
+  --color-ivory-100: #14120E;
+  --color-ivory-200: #1D1A14;
+  --color-ivory-300: #2C2820;
+  --color-ink-900: #F3EEDF;
+  --color-ink-700: #D8D0BC;
+  --color-ink-400: #A69B84;
+  --color-white: #1B1813;
+
+  background: var(--color-ivory-100);
+  color: var(--color-ink-900);
+}
+
+/* Headings stay legible on dark surfaces */
+body[data-theme="dark"] h1,
+body[data-theme="dark"] h2,
+body[data-theme="dark"] h3,
+body[data-theme="dark"] h4 {
+  color: var(--color-gold-300);
+}
+
+body[data-theme="dark"] .site-header {
+  background: var(--color-ivory-100);
+  border-color: var(--color-ivory-300);
+}
+
+body[data-theme="dark"] .main-nav a { color: var(--color-ink-700); }
+body[data-theme="dark"] .main-nav a:hover,
+body[data-theme="dark"] .main-nav a[aria-current="page"] { color: var(--color-gold-300); }
+
+body[data-theme="dark"] .header-search input,
+body[data-theme="dark"] .btn-icon,
+body[data-theme="dark"] .chip,
+body[data-theme="dark"] .form-group input,
+body[data-theme="dark"] .form-group select,
+body[data-theme="dark"] .form-group textarea,
+body[data-theme="dark"] .promo-row input {
+  background: var(--color-ivory-200);
+  border-color: var(--color-ivory-300);
+  color: var(--color-ink-900);
+}
+
+body[data-theme="dark"] .category-card,
+body[data-theme="dark"] .product-card,
+body[data-theme="dark"] .feature-card,
+body[data-theme="dark"] .restaurant-card,
+body[data-theme="dark"] .cart-table,
+body[data-theme="dark"] .cart-summary,
+body[data-theme="dark"] .chip,
+body[data-theme="dark"] .social-auth button {
+  background: var(--color-ivory-200);
+  border-color: var(--color-ivory-300);
+}
+
+body[data-theme="dark"] .btn-outline { color: var(--color-ink-900); }
+body[data-theme="dark"] .btn-outline:hover { background: var(--color-gold-500); color: var(--color-green-900); border-color: var(--color-gold-500); }
+
+body[data-theme="dark"] .btn-gold { color: var(--color-ivory-100); }
+
+body[data-theme="dark"] .fav-toggle {
+  background: rgba(20, 18, 14, 0.85);
+  color: var(--color-gold-300);
+}
+
+body[data-theme="dark"] .cart-table thead { background: var(--color-ivory-300); }
+body[data-theme="dark"] .cart-table td { border-color: var(--color-ivory-300); }
+
+body[data-theme="dark"] .logo .logo-mark-light { display: inline; }
+body[data-theme="dark"] .logo .logo-mark-dark { display: none; }
+
+body[data-theme="dark"] .theme-toggle .icon-sun { display: inline-flex; }
+body[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+
+body[data-theme="dark"] .price-prev { color: var(--color-ink-400); }
+
+body[data-theme="dark"] .loader-overlay { background: var(--color-ivory-100); }
+
+body[data-theme="dark"] .footer-col a:hover { color: var(--color-gold-300); }
+
+/* Smooth theme transition */
+body,
+.site-header,
+.category-card,
+.product-card,
+.feature-card,
+.form-group input,
+.btn-icon {
+  transition: background var(--transition-base), color var(--transition-base), border-color var(--transition-base);
+}

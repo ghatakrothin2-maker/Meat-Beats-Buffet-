@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="420" viewBox="0 0 500 420">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B9860F"/>
+      <stop offset="100%" stop-color="#7E2B20"/>
+    </linearGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#F7F1E1" opacity="0.10"/>
+    </pattern>
+  </defs>
+  <rect width="500" height="420" fill="url(#g)"/>
+  <rect width="500" height="420" fill="url(#dots)"/>
+  <circle cx="250.0" cy="176.4" r="126.0" fill="#F7F1E1" opacity="0.08"/>
+  <text x="50%" y="46%" font-size="140" text-anchor="middle" dominant-baseline="middle">🐟</text>
+  <text x="50%" y="380" font-family="Georgia, serif" font-size="34" fill="#F7F1E1" text-anchor="middle" letter-spacing="1">FISH</text>
+</svg>
